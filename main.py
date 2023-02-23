@@ -13,63 +13,67 @@ def showMsg():
 
 
 # Label Creation
-lbl = Label(tkWindow, text="RAS Project File (*.prj)")
+lbl = Label(tkWindow, text="RAS Project File (*.prj)", pady=10)
 lbl.pack()
 # tkWindow.mainloop()
 
 # TextBox Creation
 inputtxt = Text(tkWindow,
-                height=2,
-                width=100)
+                height=1,
+                width=100,
+                pady=1)
 inputtxt.pack()
 
 # Label Creation
-lbl = Label(tkWindow, text="RAS Boundary Shapefile File (*.shp)")
+lbl = Label(tkWindow, text="RAS Boundary Shapefile File (*.shp)", pady=10)
 lbl.pack()
 # tkWindow.mainloop()
 
 # TextBox Creation
 inputtxt = Text(tkWindow,
-                height=2,
-                width=100)
+                height=1,
+                width=100,
+                pady=1)
 inputtxt.pack()
 
 button = Button(tkWindow,
                 text='Extract RAS meta data.',
-                command=showMsg)
-button.pack()
+                command=showMsg,
+                pady=10)
+button.pack(pady=10)
 
 # Separator object
 separator = ttk.Separator(tkWindow, orient='horizontal')
-# separator.place(relx=0.47, rely=0, relwidth=0.2, relheight=1)
-separator.place(relx=0.47, rely=0, relwidth=0.2, relheight=1)
-separator.pack(fill='x')
+separator.pack(fill='x', pady=10)
 
 # Label Creation
-lbl = Label(tkWindow, text="HMS Project File (*.hms)")
+lbl = Label(tkWindow, text="HMS Project File (*.hms)", pady=10)
 lbl.pack()
 # tkWindow.mainloop()
 
 # TextBox Creation
 inputtxt = Text(tkWindow,
-                height=2,
-                width=100)
+                height=1,
+                width=100,
+                pady=1)
 inputtxt.pack()
 
 # Label Creation
-lbl = Label(tkWindow, text="HMS Boundary Shapefile File (*.shp)")
+lbl = Label(tkWindow, text="HMS Boundary Shapefile File (*.shp)", pady=10)
 lbl.pack()
 # tkWindow.mainloop()
 
 # TextBox Creation
 inputtxt = Text(tkWindow,
-                height=2,
-                width=100)
+                height=1,
+                width=100,
+                pady=1)
 inputtxt.pack()
 
 button = Button(tkWindow,
                 text='Extract HMS meta data.',
-                command=showMsg)
-button.pack()
+                command=showMsg,
+                pady=10)
+button.pack(pady=10)
 
 tkWindow.mainloop()
